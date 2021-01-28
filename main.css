@@ -31,7 +31,7 @@
 .table-custom {
     margin-top: 20px;
     margin-left: 25px;
-    width: 90vw;
+    width: 95vw;
 }
 
 .table-custom th {
@@ -43,7 +43,7 @@
     color: white;
     display: inline-block;
     position: absolute;
-    margin-left: calc((90% + 25px) - 76.22px);
+    margin-left: calc((95vw + 25px) - 76.22px);
     z-index: 1;
     /*
     right: 200px;
