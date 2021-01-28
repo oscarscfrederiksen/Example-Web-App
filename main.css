@@ -1,0 +1,75 @@
+/* Modify the background color */ 
+          
+.navbar-custom { 
+    background-color: #0eacac; 
+} 
+/* Modify brand and text color */ 
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-text { 
+    color: white;
+    font: Helvectica;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.main-font {
+    font: Helvetica;
+}
+
+.large-text {
+    font-size: 20px;
+}
+
+.header-padding {
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+
+.table-custom {
+    margin-top: 20px;
+    margin-left: 25px;
+    width: 90vw;
+}
+
+.table-custom th {
+    background-color: lightgray;
+}
+
+.new-button {
+    background-color: #0eacac;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    margin-left: calc((90% + 25px) - 76.22px);
+    z-index: 1;
+    /*
+    right: 200px;
+    top: 0px;
+    */
+}
+
+.new-button:hover {
+    color: white;
+    background-color: #0fa0a0;
+}
+
+a:link {
+    color: #0eacac;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0eacac;
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+  a:hover {
+    color: #0eacac;
+    background-color: transparent;
+    text-decoration: underline;
+}
