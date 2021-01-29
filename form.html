@@ -23,11 +23,14 @@
     <script src="JS/formhandler.js"></script>
 </head>
 <body>
-    <form class="TestForm">
-        <input type="text" placeholder="Enter something...">
-        <button type="button" onclick="submitEvent()"></button>
-    </form>
-    <form id="AssetForm">
+    <section class="contact-form">
+        <form>
+            <input type="text" placeholder="Enter something...">
+            <button type="submit"></button>
+        </form>
+    </section>
+    <section class="assetform">
+    <form">
         <div class="form-group">
           <label for="AssetName">Asset Name</label>
           <input type="text" class="form-control" id="AssetName" aria-describedby="AssetNameHelp" placeholder="Enter asset name">
@@ -54,6 +57,7 @@
             <label for="AssetBookValue">Asset Book Value</label>
             <input type="text" class="form-control" id="AssetBookValue" placeholder="$00000">
         </div>
-        <button type="button" class="btn btn-primary" onclick="submitEvent()">Submit</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
       </form>
+      </section>
 </body>
