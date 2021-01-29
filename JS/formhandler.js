@@ -14,11 +14,21 @@ window.onload = function() {
 
 function handleFormSubmit(event) {
     event.preventDefault();
+    var AssetData = {}
+    AssetData.AssetName = $("#AssetName").val();
+    AssetData.AssetClass = $("#AssetClass").val();
+    AssetData.AssetDateOfService = $("#AssetDateOfService").val();
+    AssetData.AssetCostBasis = $("#AssetCostBasis").val();
+    AssetData.AssetBookValue = $("#AssetBookValue").val();
 
-    const data = new FormData(event.target);
+    var AssetDataJSON = JSON.stringify(AssetData);
+    localStorage.setItem(AssetDataJSON.AssetName, AssetDataJSON);
+
+    console.log(AssetData);
+    console.log(AssetDataJSON);
+    console.log(JSON.parse(AssetDataJSON));
     
-    console.log(data.AssetName)
-    console.log("ASSET DATA!")
+    window.location.href = "index.html"
     //const formJSON = Object.fromEntries(data.entries());
     
     //console.log(JSON.stringify(formJSON, null, 2));
