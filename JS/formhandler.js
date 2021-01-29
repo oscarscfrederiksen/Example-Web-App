@@ -22,12 +22,44 @@ window.onload = function() {
 
 function handleFormSubmit(event) {
     event.preventDefault();
+    let isComplete = true;
     var AssetData = {}
     AssetData.AssetName = $("#AssetName").val();
     AssetData.AssetClass = $("#AssetClass").val();
     AssetData.AssetDateOfService = $("#AssetDateOfService").val();
     AssetData.AssetCostBasis = $("#AssetCostBasis").val();
     AssetData.AssetBookValue = $("#AssetBookValue").val();
+
+    for (var key of Object.keys(AssetData)) {
+        if (AssetData[key] == "") {
+            document.getElementById("ErrorMessage").innerHTML = "Please enter all of the required fields."
+            isComplete = false;
+        }
+        console.log(key + " -> " + AssetData[key])
+    }
+
+    if (!isComplete){
+        return;
+    }
+
+    /*
+    Object.values(AssetData).forEach(function(key) {
+        if (AssetData[key] == '') {
+            for (var key of Object.keys(p)) {
+                console.log(key + " -> " + p[key])
+            }
+          
+          console.log(JSON.stringify(AssetData[AssetData[key]]));
+          document.getElementById(AssetData[key]).style.color = "red";
+          alert('exists');
+          let errorMessageSpace = document.getElementById("ErrorMessage");
+          errorMessageSpace.innerHTML = "Please fill in all of the required fields."
+          
+        }
+        console.log(AssetData[key]);
+      });
+      */
+    
 
     var AssetDataJSON = JSON.stringify(AssetData);
     localStorage.setItem(AssetData.AssetName, AssetDataJSON);
@@ -37,6 +69,7 @@ function handleFormSubmit(event) {
     console.log(JSON.parse(AssetDataJSON));
 
     window.location.href = "index.html"
+
     //const formJSON = Object.fromEntries(data.entries());
     
     //console.log(JSON.stringify(formJSON, null, 2));

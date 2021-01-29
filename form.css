@@ -1,0 +1,15 @@
+.assetform {
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-right: 5%;
+}
+
+.btn-custom {
+    background-color: #0eacac;
+    color: white;
+}
+
+.btn-custom:hover {
+    color: white;
+    background-color: #0fa0a0;
+}
