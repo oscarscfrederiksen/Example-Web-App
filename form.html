@@ -18,9 +18,16 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="form.css">
+
+    <!-- Custom JavaScript-->
+    <script src="JS/formhandler.js"></script>
 </head>
 <body>
-    <form>
+    <form class="TestForm">
+        <input type="text" placeholder="Enter something...">
+        <button type="button" onclick="submitEvent()"></button>
+    </form>
+    <form id="AssetForm">
         <div class="form-group">
           <label for="AssetName">Asset Name</label>
           <input type="text" class="form-control" id="AssetName" aria-describedby="AssetNameHelp" placeholder="Enter asset name">
@@ -47,6 +54,6 @@
             <label for="AssetBookValue">Asset Book Value</label>
             <input type="text" class="form-control" id="AssetBookValue" placeholder="$00000">
         </div>
-        <button type="submit" class="btn btn-primary" onclick="window.location.href='index.html'">Submit</button>
+        <button type="button" class="btn btn-primary" onclick="submitEvent()">Submit</button>
       </form>
 </body>
