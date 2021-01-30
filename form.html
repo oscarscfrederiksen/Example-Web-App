@@ -23,16 +23,22 @@
     <script src="JS/formhandler.js"></script>
 </head>
 <body>
+    <nav class="navbar navbar-custom">
+        <a href="index.html" class="navbar-brand">ASSET MANAGER</a>
+    </nav> 
+
     <section class="assetform">
+    <h3 class="form-header">Create a new asset.</h3>
+    <p class="form-header-paragraph">Or you can <a href="#">import an asset from QuickBooks</a></p>
     <form>
         <div class="form-group">
-          <label for="AssetName">Asset Name</label>
-          <input type="text" class="form-control" id="AssetName" for="AssetName" aria-describedby="AssetNameHelp" placeholder="Enter asset name">
+          <label for="AssetName" class="custom-form-label">Asset Name</label>
+          <input type="text" class="form-control custom-input-field" id="AssetName" for="AssetName" aria-describedby="AssetNameHelp" placeholder="Enter asset name">
           <small id="AssetNameHelp" class="form-text text-muted">Enter a short, descriptive name for your asset.</small>
         </div>
         <div class="form-group"></div>
-        <label for="AssetClass">Asset Class</label>
-        <select class="form-control" id="AssetClass">
+        <label for="AssetClass" class="custom-form-label">Asset Class</label>
+        <select class="form-control custom-input-field" id="AssetClass">
           <option>VEHICLES</option>
           <option>LAND</option>
           <option>BUILDING</option>
@@ -40,16 +46,16 @@
         </select>
         </div>
         <div class="form-group">
-          <label for="AssetDateOfService">Asset Date of Service</label>
-          <input type="date" class="form-control" id="AssetDateOfService" placeholder="Enter the asset's date of service.">
+          <label for="AssetDateOfService" class="custom-form-label">Asset Date of Service</label>
+          <input type="date" class="form-control custom-input-field" id="AssetDateOfService" placeholder="Enter the asset's date of service.">
         </div>
         <div class="form-group">
-            <label for="AssetCostBasis">Asset Cost Basis</label>
-            <input type="text" class="form-control" id="AssetCostBasis" placeholder="$00000">
+            <label for="AssetCostBasis" class="custom-form-label">Asset Cost Basis</label>
+            <input type="text" class="form-control custom-input-field" id="AssetCostBasis" placeholder="$00000">
         </div>
         <div class="form-group">
-            <label for="AssetBookValue">Asset Book Value</label>
-            <input type="text" class="form-control" id="AssetBookValue" placeholder="$00000">
+            <label for="AssetBookValue" class="custom-form-label">Asset Book Value</label>
+            <input type="text" class="form-control custom-input-field" id="AssetBookValue" placeholder="$00000">
         </div>
         <button type="submit" class="btn btn-custom">Submit</button>
       </form>

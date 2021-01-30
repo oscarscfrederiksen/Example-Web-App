@@ -9,7 +9,7 @@ function allStorage() {
         i = keys.length;
 
     while ( i-- ) {
-        values.push( localStorage.getItem(keys[i]) );
+        values.push(localStorage.getItem(keys[i]) );
     }
 
     return values;
@@ -20,7 +20,19 @@ function populateTable(data) {
     data.forEach(function(object) {
         object = JSON.parse(object);
         var tr = document.createElement("tr");
-        tr.innerHTML = `<td><a href="#">${object.AssetName}</a></td><td>${object.AssetClass}</td><td>${object.AssetDateOfService}</td><td>${object.AssetCostBasis}</td><td>${object.AssetBookValue}</td>`;
+        tr.innerHTML = `<td><a href="#" class="ObjectLink">${object.AssetName}</a></td><td>${object.AssetClass}</td><td>${object.AssetDateOfService}</td><td>${object.AssetCostBasis}</td><td>${object.AssetBookValue}</td>`;
         table.appendChild(tr);
     });
+
+    $('.ObjectLink').each(function(i, obj) {
+        $(obj).on( "click", function() {
+            showAssetDetails($(this).text(), allStorage());
+          });
+    });
+}
+
+function showAssetDetails(AssetName, data){
+    var asset = AssetName
+    var queryString = "?Asset=" + asset
+    window.location.href = "AssetDetails.html" + queryString;
 }

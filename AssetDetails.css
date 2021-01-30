@@ -1,0 +1,13 @@
+.navbar-custom { 
+    background-color: #0eacac; 
+} 
+/* Modify brand and text color */ 
+
+.navbar-custom .navbar-brand, 
+.navbar-custom .navbar-text { 
+    color: white;
+    font: Helvectica;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 20px;
+}
