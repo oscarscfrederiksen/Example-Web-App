@@ -12,10 +12,10 @@ window.onload = function(){
 
 
     document.getElementById("AssetName").innerHTML = assetObject.AssetName;
-    document.getElementById("AssetClass").innerHTML = assetObject.AssetClass;
-    document.getElementById("AssetDateOfService").innerHTML = assetObject.AssetDateOfService;
-    document.getElementById("AssetCostBasis").innerHTML = assetObject.AssetCostBasis;
-    document.getElementById("AssetBookValue").innerHTML = assetObject.AssetBookValue;
+    document.getElementById("AssetClass").innerHTML = "Class: " + assetObject.AssetClass;
+    document.getElementById("AssetDateOfService").innerHTML = "Date of Service: " + assetObject.AssetDateOfService;
+    document.getElementById("AssetCostBasis").innerHTML = "Cost Basis: " + assetObject.AssetCostBasis;
+    document.getElementById("AssetBookValue").innerHTML = "Book Value: " + assetObject.AssetBookValue;
     //AssetData.AssetClass = $("#AssetClass").val();
     //AssetData.AssetDateOfService = $("#AssetDateOfService").val();
     //AssetData.AssetCostBasis = $("#AssetCostBasis").val();

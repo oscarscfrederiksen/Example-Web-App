@@ -11,3 +11,17 @@
     font-size: 20px;
     margin-left: 20px;
 }
+
+.Asset-name-header {
+    margin-left: 5vw;
+    margin-top: 5vh;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.Asset-info {
+    margin-left: 5vw;
+    margin-top: 3vw;
+    font-size: 15px;
+    font-weight: 300;
+}

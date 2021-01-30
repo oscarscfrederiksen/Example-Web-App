@@ -73,3 +73,42 @@ a:visited {
     background-color: transparent;
     text-decoration: underline;
 }
+
+.new-button-empty {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #0eacac;
+    color: white;
+}
+
+.new-button-empty:hover {
+    color: white;
+    background-color: #0fa0a0;
+}
+
+.Empty-state-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15%;
+    height: 15%;
+}
+
+.Empty-state-element {
+    text-align: center;
+}
+
+.Empty-state-header {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.Empty-state-paragraph {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.Empty-state {
+    margin-top: 10vh;
+}

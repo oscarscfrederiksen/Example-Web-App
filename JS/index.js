@@ -1,4 +1,6 @@
 window.onload = function(){
+    var emptyState = document.getElementById("Empty-state");
+    emptyState.style.display = "none";
     populateTable(allStorage());
 }
 
@@ -16,7 +18,16 @@ function allStorage() {
 }
 
 function populateTable(data) {
+    var emptyState = document.getElementById("Empty-state");
+    var newButton = document.getElementById("Shown-button");
     var table = document.getElementById("table-JSON");
+    console.log(table);
+    if (localStorage.length === 0) {
+        emptyState.style.display = "block";
+        table.style.display = "none";
+        newButton.style.display = "none";
+        return;
+    }
     data.forEach(function(object) {
         object = JSON.parse(object);
         var tr = document.createElement("tr");

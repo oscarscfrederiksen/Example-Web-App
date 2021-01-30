@@ -28,9 +28,15 @@
     </nav> 
 
     <div>
-        <button type="button" class="btn new-button" onclick="window.location.href='form.html'">+ NEW</button>
+        <button type="button" class="btn new-button" id="Shown-button" onclick="window.location.href='form.html'">+ NEW</button>
         <div class="header-padding">
             <span class="large-text main-font h1"><b>COMPANY XYZ ASSETS</b></span>
+        </div>
+        <div class="Empty-state" id="Empty-state">
+            <img src="EmptyState-image.png" class="Empty-state-image">
+            <h4 class="Empty-state-element Empty-state-header">You don't have any assets - yet.</h4>
+            <p class="Empty-state-element Empty-state-paragraph">Either Create a new asset or <a href="#">import one from QuickBooks</a></p>
+            <button type="button" class="btn new-button-empty" onclick="window.location.href='form.html'">+ Create an asset</button>
         </div>
         <table class="table table-borderless table-custom" id="table-JSON">
             <thead>
@@ -43,6 +49,7 @@
                 </tr>
             </thead>
             <tbody>
+                <!--
                 <tr>
                     <td><a href="#">2015 FORD F-150</a></td>
                     <td>VEHICLES</td>
@@ -78,6 +85,7 @@
                     <td>$12,000</td>
                     <td>$10,750</td>
                 </tr>
+            -->
             </tbody>
         </table>
     </div>
