@@ -1,14 +1,6 @@
 window.onload = function() {
     const form = document.querySelector('.assetform');
     form.addEventListener('submit', handleFormSubmit);
-
-  /*
-  // Apply formatter
-  const input1 = document.getElementById("AssetBookValue");
-  const input2 = document.getElementById("AssetCostBasis");
-  addFormatter(input1, regexPrefix(/^(?:\d*_?){1}\d*$/, '$'));
-  addFormatter(input2, regexPrefix(/^https?:\/\//, '$'));
-  */
 }
 
 $(document).ready(function() {

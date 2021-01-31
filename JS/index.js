@@ -11,7 +11,7 @@ function allStorage() {
         i = keys.length;
 
     while ( i-- ) {
-        values.push(localStorage.getItem(keys[i]) );
+        values.push(JSON.parse(localStorage.getItem(keys[i])));
     }
 
     return values;
@@ -29,7 +29,6 @@ function populateTable(data) {
         return;
     }
     data.forEach(function(object) {
-        object = JSON.parse(object);
         var tr = document.createElement("tr");
         tr.innerHTML = `<td><a href="#" class="ObjectLink">${object.AssetName}</a></td><td>${object.AssetClass}</td><td>${object.AssetDateOfService}</td><td>${object.AssetCostBasis}</td><td>${object.AssetBookValue}</td>`;
         table.appendChild(tr);
